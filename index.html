@@ -5,30 +5,62 @@
   <head>
     <meta charset="utf-8">
     <title>Personal Portfolio Webpage</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="styles.css"/>
   </head>
+
   <body>
     <header>
-      <nav>
-        <ul>
-          <li></li>
+    <!-- NAV START -->
+      <nav id="navbar" Class="nav">  <!-- User Story #6: My portfolio should have a navbar with an id of navbar  -->
+        <ul class="nav-list">
+          <li><a href="#welcom-section">About</a></li>  <!--User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page -->
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    <!-- NAV END -->
     </header>
-    <section>
-      <article>
-        <header>
-          <h2>ARTICLE1 HEADER</h2>
-          <p><a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-        </header>
-        <p>PARAGRAPH</p>
-      </article>
+
+    <!-- PROJECTS START -->
+    <section id="projects" class="projects-section"> <!-- User Story #3: My portfolio should have a projects section with an id of projects -->
+      <h2 class="projects-section-header">These are some of my projects</h2>
+
+      <div class="projects-grid">
+        <a href="https://codepen.io/mjkode/full/joPeLv" target="_blank" class="project project-tile"> <!-- User Story #5: The projects section should contain at least one link to a project -->
+          <img class="project-image" src="https://raw.githubusercontent.com/mjkode/fccPersonalPortfolio/master/tribute.png" alt="project"/>
+          <p class="project-title"> <!-- User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project -->
+            <span class="code">&lt;</span>
+            Tribute Page1
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        
+        <a href="https://codepen.io/mjkode/full/pXRZLQ" target="_blank" class="project project-tile">
+          <img class="project-image" src="https://raw.githubusercontent.com/mjkode/fccPersonalPortfolio/master/landing.png"
+          alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Landing Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        
+        <a href="https://codepen.io/mjkode/full/rEpqKP" target="_blank" class="project project-tile">
+          <img class="project-image" src="https://raw.githubusercontent.com/mjkode/fccPersonalPortfolio/master/technical.png"
+          alt="project"/>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Technical Doc Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>     
+      </div>
+
+      <a href="https://codepen.io/mjkode/" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i></a> <!-- User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab -->
     </section>
-    <aside>
-      <h2>ASIDE TITLE</h2>
-      <p>PARAGRAPH</p>
-    </aside>
+    <!-- END PROJECTS SECTION -->
+    
     <footer>  
       <p>Copyright 2019 Michael Kiger</p>
     </footer>
